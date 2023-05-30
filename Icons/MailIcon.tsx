@@ -1,5 +1,5 @@
 interface IiconProps {
-  fillColor: string;
+  fillColor: string | undefined;
 }
 export default function MailIcon(props: IiconProps) {
   const color = props.fillColor === undefined ? '#eaeaea' : props.fillColor;
