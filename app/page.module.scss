@@ -28,12 +28,6 @@
     }
   }
 }
-.divider {
-  height: 0;
-  width: 85%;
-  margin: 0 auto;
-  border: 1px solid #636366;
-}
 
 .aboutInfo {
   display: flex;
@@ -72,6 +66,44 @@
         text-align: left;
         max-width: 650px;
         margin-top: 10px;
+      }
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    text-transform: uppercase;
+    margin: 80px auto;
+    font-size: 48px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      background: #fbfbfb;
+      border: 3px solid #000000;
+      border-radius: 5px;
+      padding: 38.5px 32px;
+      h5 {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 52px;
+        text-align: center;
+        max-width: 230px;
+        color: #000000;
       }
     }
   }

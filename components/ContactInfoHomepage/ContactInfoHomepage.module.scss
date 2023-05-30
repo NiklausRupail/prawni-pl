@@ -1,5 +1,38 @@
+@import '/styles/variables.scss';
+
 .contactInfo {
+  display: flex;
+  justify-content: center;
+  margin: 86px auto;
+
   .contact {
+    width: 100%;
+    background-color: $blueColorDarker;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h2 {
+      text-transform: uppercase;
+      color: $whiteColor;
+      margin: 40px auto;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 62px;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      h5 {
+        color: $whiteColor;
+        max-width: 45ch;
+        text-align: left;
+      }
+    }
   }
 }

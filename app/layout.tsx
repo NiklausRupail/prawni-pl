@@ -1,6 +1,7 @@
 import Contact from 'components/Contact/Contact';
 import '/styles/globals.scss';
 import Nav from 'components/Nav/Nav';
+import Footer from 'components/Footer/Footer';
 
 export const metadata = {
   title: 'Prawni.pl',
@@ -18,7 +19,7 @@ export default function RootLayout({
         <Contact />
         <Nav />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

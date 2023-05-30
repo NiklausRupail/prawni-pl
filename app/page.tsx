@@ -5,6 +5,10 @@ import aboutImg from '../img/aboutImg.png';
 
 import Image from 'next/image';
 import ContactInfoHomepage from 'components/ContactInfoHomepage/ContactInfoHomepage';
+import FamilyIcon from 'Icons/FamilyIcon';
+import PaperIcon from 'Icons/PaperIcon';
+import BalanceIcon from 'Icons/BalanceIcon';
+import Divider from 'components/Divider/Divider';
 
 const Homepage = () => {
   return (
@@ -21,7 +25,7 @@ const Homepage = () => {
         </section>
         <Image src={heroImg} alt='Main picture, man in suit' />
       </article>
-      <div className={styles.divider}></div>
+      <Divider />
       <article className={styles.aboutInfo}>
         <h2>O Kancelarii</h2>
         <p>
@@ -67,7 +71,24 @@ const Homepage = () => {
         </div>
       </article>
       <ContactInfoHomepage />
-      <article></article>
+      <article className={styles.services}>
+        <h2>USŁUGI</h2>
+        <section>
+          <div>
+            <FamilyIcon />
+            <h5>Prawo Spadkowe</h5>
+          </div>
+          <div>
+            <PaperIcon />
+            <h5>Prawo Rozwodowe</h5>
+          </div>
+          <div>
+            <BalanceIcon />
+            <h5>Prawo Cywilne</h5>
+          </div>
+        </section>
+        <Divider />
+      </article>
     </>
   );
 };
