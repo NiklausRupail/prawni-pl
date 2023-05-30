@@ -1,7 +1,10 @@
 import styles from './page.module.scss';
+
 import heroImg from '../img/heroImg.png';
 import aboutImg from '../img/aboutImg.png';
+
 import Image from 'next/image';
+import ContactInfoHomepage from 'components/ContactInfoHomepage/ContactInfoHomepage';
 
 const Homepage = () => {
   return (
@@ -63,7 +66,7 @@ const Homepage = () => {
           <Image src={aboutImg} alt='About info image' />
         </div>
       </article>
-      <article></article>
+      <ContactInfoHomepage />
       <article></article>
     </>
   );
