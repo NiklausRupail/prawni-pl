@@ -1,4 +1,7 @@
-export default function PhoneIcon(props) {
+interface IiconProps {
+  fillColor: string;
+}
+export default function PhoneIcon(props: IiconProps) {
   const color = props.fillColor === undefined ? '#eaeaea' : props.fillColor;
   return (
     <svg

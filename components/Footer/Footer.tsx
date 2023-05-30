@@ -8,17 +8,17 @@ const Footer = () => {
       <div>
         <h5>Kontakt</h5>
         <div className={styles.contactInfoSection}>
-          <PhoneIcon fillColor='#000000' />
+          <PhoneIcon fillColor={'#000000'} />
 
           <p>+48 500 500 500</p>
         </div>
         <div className={styles.contactInfoSection}>
-          <PhoneIcon fillColor='#000000' />
+          <PhoneIcon fillColor={'#000000'} />
 
           <p>32 333 22 22</p>
         </div>
         <div className={styles.contactInfoSection} id='mail'>
-          <MailIcon fillColor='#000000' />
+          <MailIcon fillColor={'#000000'} />
 
           <p>adriannowak@wp.pl</p>
         </div>

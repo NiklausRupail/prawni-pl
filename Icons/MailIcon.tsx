@@ -1,4 +1,7 @@
-export default function MailIcon(props) {
+interface IiconProps {
+  fillColor: string;
+}
+export default function MailIcon(props: IiconProps) {
   const color = props.fillColor === undefined ? '#eaeaea' : props.fillColor;
   return (
     <svg
