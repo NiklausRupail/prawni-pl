@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter&family=Raleway&display=swap');
+@import './reset.scss';
+@import './breakpoints.scss';
+@import 'include-media';
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: $whiteColor;
+}
+
+body {
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+
+  @include media('>=laptop') {
+    width: 1000px;
+    padding: 0;
+  }
+
+  @include media('>=desktop') {
+    width: 1320px;
+  }
+}
+
+a,
+.a {
+  color: inherit;
+  text-decoration: unset;
+
+  &:hover {
+    cursor: pointer;
+    color: inherit;
+  }
+}
+.activeNavLink {
+  color: #ac8f75;
+}
+
+h1,
+.h1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 73px;
+
+  @include media('>=laptop') {
+    font-size: 28px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+
+  @include media('>=laptop') {
+    font-size: 26px;
+  }
+}
+
+h3,
+.h3 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+
+  @include media('<=laptop') {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+h4,
+.h4 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h5,
+.h5 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+h6,
+.h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+p,
+.p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+p.small {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}

@@ -1,0 +1,75 @@
+@import '/styles/variables.scss';
+
+.mainInfo {
+  margin: 100px 60px;
+  display: flex;
+  justify-content: space-between;
+  section {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      max-width: 578px;
+      font-weight: 400;
+      line-height: 42px;
+    }
+    button {
+      background: #22234d;
+      color: $whiteColor;
+
+      box-shadow: 0px 4.77818px 4.77818px rgba(0, 0, 0, 0.25);
+      border: none;
+      border-radius: 5px;
+
+      margin: 52px auto;
+      padding: 18px 55px;
+    }
+  }
+}
+.divider {
+  height: 0;
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid #636366;
+}
+
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-transform: uppercase;
+    margin: 80px auto;
+    font-size: 48px;
+  }
+  p {
+    max-width: 1132px;
+    text-align: center;
+  }
+  div {
+    display: flex;
+    margin-top: 76px;
+
+    gap: 300px;
+  }
+  .values {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: fle;
+
+      gap: 0;
+      margin: 5px auto;
+      p {
+        text-align: left;
+        max-width: 650px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

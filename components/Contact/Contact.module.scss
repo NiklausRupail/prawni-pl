@@ -1,0 +1,27 @@
+@import '/styles/variables.scss';
+
+.contact {
+  width: 100%;
+  padding: 15px 60px;
+
+  background-color: $blueColorDarker;
+  color: $whiteColor;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Inter';
+
+  a {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  .phoneNums {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}
