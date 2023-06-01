@@ -21,7 +21,9 @@ const Homepage = () => {
             vestibulum varius nisi, ac mollis lectus lacinia eget. Suspendisse
             potenti. Fusce convallis neque nec semper.
           </h2>
-          <button>Skontaktuj się</button>
+          <a href='/#contactSection'>
+            <button>Skontaktuj się</button>
+          </a>
         </section>
         <Image src={heroImg} alt='Main picture, man in suit' />
       </article>
@@ -67,11 +69,11 @@ const Homepage = () => {
               </p>
             </div>
           </section>
-          <Image src={aboutImg} alt='About info image' />
+          <Image id='contactSection' src={aboutImg} alt='About info image' />
         </div>
       </article>
       <ContactInfoHomepage />
-      <article className={styles.services}>
+      <article className={styles.services} id='servicesSection'>
         <h2>USŁUGI</h2>
         <section>
           <div>

@@ -12,16 +12,30 @@
 
   font-family: 'Inter';
 
+  @include media('<=tablet') {
+    padding: 7px 5px;
+    justify-content: center;
+    gap: 15%;
+  }
   a {
     display: flex;
     font-size: 16px;
     justify-content: center;
     align-items: center;
     gap: 3px;
+
+    @include media('<=phone') {
+      font-size: 14px;
+    }
   }
   .phoneNums {
     display: flex;
     justify-content: center;
     gap: 50px;
+    .mobileNum {
+      @include media('<=tablet') {
+        display: none;
+      }
+    }
   }
 }

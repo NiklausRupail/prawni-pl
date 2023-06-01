@@ -10,7 +10,7 @@ const Contact = () => {
           <PhoneIcon fillColor={undefined} />
           <p>+48 500 500 500</p>
         </a>
-        <a href='tel:323-332-222'>
+        <a href='tel:323-332-222' className={styles.mobileNum}>
           <PhoneIcon fillColor={undefined} />
           <p>32 333 22 22</p>
         </a>

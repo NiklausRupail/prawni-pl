@@ -1,6 +1,8 @@
 import styles from './ContactInfoHomepage.module.scss';
 import Image from 'next/image';
 import mapImg from '../../img/mapImg.png';
+import mapImgMobile from '../../img/mapImgMobile.png';
+
 import ContactPlaceIcon from 'Icons/ContactPlaceIcon';
 import ContactPhoneIcon from 'Icons/ContactPhoneIcon';
 import ContactMailIcon from 'Icons/ContactMailIcon';
@@ -27,7 +29,8 @@ const ContactInfoHomepage = () => {
           <h5>adriannowak@wp.pl</h5>
         </div>
       </section>
-      <Image src={mapImg} alt='Map Image' />
+      <Image src={mapImg} alt='Map Image' className={styles.desktopImg} />
+      <Image src={mapImgMobile} alt='Map Image' className={styles.mobileImg} />
     </article>
   );
 };

@@ -4,7 +4,10 @@
   display: flex;
   justify-content: center;
   margin: 86px auto;
-
+  @include media('<=laptop') {
+    flex-direction: column;
+    padding: 20px 0;
+  }
   .contact {
     width: 100%;
     background-color: $blueColorDarker;
@@ -34,5 +37,19 @@
         text-align: left;
       }
     }
+  }
+}
+.mobileImg {
+  display: none;
+  width: 100%;
+  @include media('<=laptop') {
+    display: block;
+  }
+}
+.desktopImg {
+  display: block;
+
+  @include media('<=laptop') {
+    display: none;
   }
 }

@@ -4,6 +4,11 @@
   margin: 100px 60px;
   display: flex;
   justify-content: space-between;
+
+  @include media('<=laptop') {
+    flex-direction: column;
+    align-items: center;
+  }
   section {
     display: flex;
     flex-direction: column;
@@ -16,7 +21,7 @@
       line-height: 42px;
     }
     button {
-      background: #22234d;
+      background: $grayishBlueColorDarker;
       color: $whiteColor;
 
       box-shadow: 0px 4.77818px 4.77818px rgba(0, 0, 0, 0.25);
@@ -25,11 +30,24 @@
 
       margin: 52px auto;
       padding: 18px 55px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: $grayishBlueColor;
+      }
     }
   }
 }
 
 .aboutInfo {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +69,14 @@
     justify-content: space-between;
 
     gap: 300px;
+    @include media('<=desktop') {
+      gap: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+    @include media('<=laptop') {
+      flex-direction: column;
+    }
   }
   .values {
     display: flex;
@@ -58,7 +84,7 @@
     div {
       display: flex;
       flex-direction: column;
-      align-items: fle;
+      align-items: center;
 
       gap: 0;
       margin: 5px auto;
@@ -79,11 +105,16 @@
     margin: 80px auto;
     font-size: 48px;
   }
+
   section {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-bottom: 80px;
+    @include media('<=laptop') {
+      flex-direction: column;
+      align-items: center;
+    }
     div {
       display: flex;
       flex-direction: column;
