@@ -13,19 +13,25 @@ const ContactInfoHomepage = () => {
       <section className={styles.contact}>
         <h2>Kontakt</h2>
         <div>
-          <ContactPlaceIcon />
+          <div className={styles.placeIcon}>
+            <ContactPlaceIcon />
+          </div>
           <h5>
             Lorem St 30/4 <br></br>40-400 Lorem
           </h5>
         </div>
         <div>
-          <ContactPhoneIcon />
+          <div className={styles.phoneIcon}>
+            <ContactPhoneIcon />
+          </div>
           <h5>
             +48 500 500 500 <br></br>32 333 22 22
           </h5>
         </div>
         <div>
-          <ContactMailIcon />
+          <div className={styles.mailIcon}>
+            <ContactMailIcon />
+          </div>
           <h5>adriannowak@wp.pl</h5>
         </div>
       </section>
