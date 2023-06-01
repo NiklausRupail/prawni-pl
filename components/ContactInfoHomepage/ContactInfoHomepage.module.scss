@@ -26,11 +26,14 @@
       line-height: 62px;
     }
     div {
-      width: 100%;
+      width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 100px;
+      @include media('<=laptop') {
+        width: 100%;
+      }
       h5 {
         color: $whiteColor;
         max-width: 45ch;
@@ -42,13 +45,14 @@
 .mobileImg {
   display: none;
   width: 100%;
+  height: auto;
   @include media('<=laptop') {
     display: block;
   }
 }
 .desktopImg {
   display: block;
-
+  width: 50%;
   @include media('<=laptop') {
     display: none;
   }

@@ -1,3 +1,4 @@
+@import '/styles/variables.scss';
 footer.footer {
   background-color: #fff;
   box-shadow: 0px -6px 50px 2px rgba(0, 0, 0, 0.25);
@@ -7,9 +8,28 @@ footer.footer {
 
   display: flex;
   justify-content: space-around;
+  @include media('<=tablet') {
+    flex-direction: column;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+  }
+  .contactAndHoursInfoWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    @include media('<=laptop') {
+      gap: 100px;
+      flex-direction: column-reverse;
+    }
+  }
   p {
     opacity: 0.8;
     font-weight: 400;
+    max-width: 865px;
+    @include media('<=laptop') {
+      max-width: 600px;
+    }
   }
   p.hoursInfo,
   li {

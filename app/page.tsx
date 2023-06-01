@@ -25,7 +25,11 @@ const Homepage = () => {
             <button>Skontaktuj się</button>
           </a>
         </section>
-        <Image src={heroImg} alt='Main picture, man in suit' />
+        <Image
+          src={heroImg}
+          alt='Main picture, man in suit'
+          className={styles.heroImg}
+        />
       </article>
       <Divider />
       <article className={styles.aboutInfo}>
@@ -69,7 +73,12 @@ const Homepage = () => {
               </p>
             </div>
           </section>
-          <Image id='contactSection' src={aboutImg} alt='About info image' />
+          <Image
+            id='contactSection'
+            src={aboutImg}
+            alt='About info image'
+            className={styles.valuesImg}
+          />
         </div>
       </article>
       <ContactInfoHomepage />

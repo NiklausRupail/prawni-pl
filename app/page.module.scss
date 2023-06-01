@@ -8,39 +8,54 @@
   @include media('<=laptop') {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   section {
     display: flex;
     flex-direction: column;
     h1 {
       font-size: 40px;
+      @include media('<=laptop') {
+        text-align: center;
+      }
     }
     h2 {
       max-width: 578px;
       font-weight: 400;
       line-height: 42px;
+      font-size: 32px;
+      @include media('<=desktop') {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+      }
     }
-    button {
-      background: $grayishBlueColorDarker;
-      color: $whiteColor;
+    a {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      button {
+        background: $grayishBlueColorDarker;
+        color: $whiteColor;
 
-      box-shadow: 0px 4.77818px 4.77818px rgba(0, 0, 0, 0.25);
-      border: none;
-      border-radius: 5px;
+        box-shadow: 0px 4.77818px 4.77818px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 5px;
 
-      margin: 52px auto;
-      padding: 18px 55px;
+        margin: 52px 0;
+        padding: 18px 55px;
 
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
 
-      transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
 
-      &:hover {
-        background-color: $grayishBlueColor;
+        &:hover {
+          background-color: $grayishBlueColor;
+        }
       }
     }
   }
@@ -60,6 +75,9 @@
   p {
     max-width: 1132px;
     text-align: center;
+    @include media('<=laptop') {
+      max-width: 400px;
+    }
   }
   div {
     display: flex;
@@ -76,6 +94,7 @@
     }
     @include media('<=laptop') {
       flex-direction: column;
+      //margin-left: 0;
     }
   }
   .values {
@@ -92,6 +111,9 @@
         text-align: left;
         max-width: 650px;
         margin-top: 10px;
+        @include media('<=tablet') {
+          max-width: 400px;
+        }
       }
     }
   }
@@ -137,5 +159,27 @@
         color: #000000;
       }
     }
+  }
+}
+
+.valuesImg {
+  @include media('<=tablet') {
+    width: 400px;
+    height: 250px;
+  }
+  @include media('<=phone') {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+.heroImg {
+  @include media('<=tablet') {
+    width: 430px;
+    height: 339px;
+  }
+  @include media('<=phone') {
+    width: 350px;
+    height: 276px;
   }
 }

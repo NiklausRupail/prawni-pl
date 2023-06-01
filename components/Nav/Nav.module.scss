@@ -1,6 +1,7 @@
 @import '/styles/variables.scss';
 
 nav.mobileNav {
+  z-index: 100;
   display: none;
   position: sticky;
   top: 0;
@@ -31,7 +32,7 @@ nav.mobileNav {
     gap: 90px;
     padding: 20px 30px;
     @include media('<=phone') {
-      gap: 50px;
+      gap: 30px;
     }
   }
 }
@@ -46,8 +47,9 @@ nav.nav {
     display: none;
   }
   @include media('<=laptop') {
-    // padding: 8px 30px;
+    padding: 16px 20px;
     justify-content: center;
+    gap: 100px;
     h5 {
       font-size: 20px;
     }
