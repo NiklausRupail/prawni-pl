@@ -12,7 +12,7 @@ const ContactInfoHomepage = () => {
     <article className={styles.contactInfo}>
       <section className={styles.contact}>
         <h2>Kontakt</h2>
-        <div>
+        <div className={styles.wrapper}>
           <div className={styles.placeIcon}>
             <ContactPlaceIcon />
           </div>
@@ -20,7 +20,7 @@ const ContactInfoHomepage = () => {
             Lorem St 30/4 <br></br>40-400 Lorem
           </h5>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <div className={styles.phoneIcon}>
             <ContactPhoneIcon />
           </div>
@@ -28,7 +28,7 @@ const ContactInfoHomepage = () => {
             +48 500 500 500 <br></br>32 333 22 22
           </h5>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <div className={styles.mailIcon}>
             <ContactMailIcon />
           </div>

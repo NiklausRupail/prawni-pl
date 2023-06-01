@@ -175,11 +175,11 @@
 
 .heroImg {
   @include media('<=tablet') {
-    width: 430px;
-    height: 339px;
+    width: 410px;
+    height: 338px;
   }
   @include media('<=phone') {
-    width: 350px;
-    height: 276px;
+    width: 330px;
+    height: 220px;
   }
 }

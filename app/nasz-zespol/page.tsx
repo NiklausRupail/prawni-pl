@@ -1,6 +1,6 @@
+import Divider from 'components/Divider/Divider';
 import Image from 'next/image';
 import styles from './page.module.scss';
-import Divider from 'components/Divider/Divider';
 
 import lawyer1 from '../../img/lawyer1.png';
 import lawyer2 from '../../img/lawyer2.png';

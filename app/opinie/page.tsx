@@ -1,6 +1,6 @@
+import Divider from 'components/Divider/Divider';
 import Review from 'components/Review/Review';
 import styles from './page.module.scss';
-import Divider from 'components/Divider/Divider';
 
 const reviewsPage = () => {
   return (

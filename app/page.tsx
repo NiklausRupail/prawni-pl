@@ -1,14 +1,14 @@
 import styles from './page.module.scss';
 
-import heroImg from '../img/heroImg.png';
 import aboutImg from '../img/aboutImg.png';
+import heroImg from '../img/heroImg.png';
 
-import Image from 'next/image';
-import ContactInfoHomepage from 'components/ContactInfoHomepage/ContactInfoHomepage';
+import BalanceIcon from 'Icons/BalanceIcon';
 import FamilyIcon from 'Icons/FamilyIcon';
 import PaperIcon from 'Icons/PaperIcon';
-import BalanceIcon from 'Icons/BalanceIcon';
+import ContactInfoHomepage from 'components/ContactInfoHomepage/ContactInfoHomepage';
 import Divider from 'components/Divider/Divider';
+import Image from 'next/image';
 
 const Homepage = () => {
   return (
