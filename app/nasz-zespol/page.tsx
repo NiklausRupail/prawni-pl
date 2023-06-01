@@ -9,7 +9,7 @@ import lawyer3 from '../../img/lawyer3.png';
 const teamPage = () => {
   return (
     <section className={styles.team}>
-      <h2>NASZ ZESPÓŁ</h2>
+      <h2 className={styles.header}>NASZ ZESPÓŁ</h2>
       <div className={styles.lawyer}>
         <Image src={lawyer1} alt={'Adrian Nowak'} />
         <div>

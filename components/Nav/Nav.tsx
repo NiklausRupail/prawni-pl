@@ -4,6 +4,7 @@ import styles from './Nav.module.scss';
 import Link from 'next/link';
 import HomeIcon from 'Icons/HomeIcon';
 import BurgerMenuIcon from 'Icons/BurgerMenuIcon';
+import HamburgerMenu from 'components/HamburgerMenu/HamburgerMenu';
 
 const Nav = () => {
   const searchParams = usePathname();
@@ -47,7 +48,7 @@ const Nav = () => {
             <HomeIcon />
           </Link>
           <>
-            <BurgerMenuIcon />
+            <HamburgerMenu />
           </>
         </div>
       </nav>

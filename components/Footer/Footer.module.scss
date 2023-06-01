@@ -5,7 +5,8 @@ footer.footer {
 
   padding-top: 118px;
   padding-bottom: 135px;
-
+  padding-right: 60px;
+  padding-left: 60px;
   display: flex;
   justify-content: space-around;
   @include media('<=tablet') {
@@ -21,6 +22,7 @@ footer.footer {
     @include media('<=laptop') {
       gap: 100px;
       flex-direction: column-reverse;
+      margin-bottom: 40px;
     }
   }
   p {

@@ -2,14 +2,9 @@
 
 .team {
   width: 100%;
-  h2 {
+  h2.header {
     margin: 80px auto;
     text-align: center;
-
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
   }
   .lawyer,
   .lawyerOther {
@@ -21,30 +16,44 @@
       flex-direction: column;
       align-items: center;
     }
-    h2 {
-      margin-right: 100px;
-      margin-top: 20px;
-      @include media('<=laptop') {
-        margin-right: 0;
-      }
-      span {
-        color: $grayishBlueColor;
+    img {
+      @include media('<=tablet') {
+        width: 400px;
+        height: auto;
       }
     }
-    p {
-      max-width: 700px;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      margin: 59px 80px;
-      @include media('<=laptop') {
-        text-align: center;
-      }
+    @include media('<=phone') {
+      width: 223px;
+      height: auto;
+    }
+  }
+  h2 {
+    margin-right: 100px;
+    margin-top: 20px;
+    @include media('<=laptop') {
+      margin-right: 0;
+    }
+    span {
+      color: $grayishBlueColor;
+    }
+  }
+  p {
+    max-width: 700px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 59px 80px;
+    @include media('<=laptop') {
+      text-align: center;
+    }
+    @include media('<=tablet') {
+      margin: 59px 12px;
     }
   }
 }
+
 .lawyerOther {
   flex-direction: row-reverse;
 }
