@@ -9,6 +9,7 @@ import PaperIcon from 'Icons/PaperIcon';
 import ContactInfoHomepage from 'components/ContactInfoHomepage/ContactInfoHomepage';
 import Divider from 'components/Divider/Divider';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Homepage = () => {
   return (
@@ -86,16 +87,22 @@ const Homepage = () => {
         <h2>USŁUGI</h2>
         <section>
           <div>
-            <FamilyIcon />
-            <h5>Prawo Spadkowe</h5>
+            <Link href='/inheritance'>
+              <FamilyIcon />
+              <h5>Prawo Spadkowe</h5>
+            </Link>
           </div>
           <div>
-            <PaperIcon />
-            <h5>Prawo Rozwodowe</h5>
+            <Link href='/divorce'>
+              <PaperIcon />
+              <h5>Prawo Rozwodowe</h5>
+            </Link>
           </div>
           <div>
-            <BalanceIcon />
-            <h5>Prawo Cywilne</h5>
+            <Link href='/citizen'>
+              <BalanceIcon />
+              <h5>Prawo Cywilne</h5>
+            </Link>
           </div>
         </section>
         <Divider />

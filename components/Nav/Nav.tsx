@@ -8,7 +8,8 @@ import HamburgerMenu from 'components/HamburgerMenu/HamburgerMenu';
 
 const Nav = () => {
   const searchParams = usePathname();
-
+  const services = ['/inheritance', '/divorce', '/citizen'];
+  console.log(searchParams, services);
   return (
     <>
       <nav className={styles.nav}>
@@ -28,10 +29,13 @@ const Nav = () => {
               <h5>Nasz Zespół</h5>
             </Link>
           )}
-          <Link href={'/#servicesSection'}>
-            <h5>Usługi</h5>
-          </Link>
-
+          {searchParams in services ? (
+            <h5 className='activeNavLink'>Usługi</h5>
+          ) : (
+            <Link href={'/#servicesSection'}>
+              <h5>Usługi</h5>
+            </Link>
+          )}
           {searchParams === '/opinie' ? (
             <h5 className='activeNavLink'>Opinie</h5>
           ) : (
